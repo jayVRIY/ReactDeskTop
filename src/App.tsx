@@ -1,4 +1,3 @@
-import './App.less';
 import styled, {keyframes} from 'styled-components'
 import Tag from './component/Tag';
 
@@ -14,7 +13,7 @@ const Logs = styled.div`
   box-shadow: 5px 5px 20px rgba(133, 133, 133, 0.39);
 `
 export default () => {
-    return <Logs draggable={true}>
+    return <Logs >
         <Tag/>
         <Tag/>
         <Tag/>

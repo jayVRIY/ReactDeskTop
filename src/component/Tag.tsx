@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Calender from "./Calender";
+import LearningDetail from "./LearningDetail";
 
 const Tag = styled.div`
   width: 95%;
@@ -8,7 +10,12 @@ const Tag = styled.div`
   border: 10px;
   background-color: #78e8cf;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
 `;
 export default () => {
-    return <Tag></Tag>
+    return <Tag>
+        <Calender></Calender>
+        <LearningDetail></LearningDetail>
+    </Tag>
 }
