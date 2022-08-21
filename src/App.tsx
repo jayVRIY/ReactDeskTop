@@ -2,14 +2,16 @@ import styled from "styled-components";
 import AppBars from "./componts/AppBars";
 import Desktop from "./componts/Desktop";
 import StatusBar from "./componts/StatusBar";
+import AppUI from "./componts/AppUI";
 
 const {clientHeight, clientWidth} = window.document.documentElement;
 let element = (): JSX.Element => {
     return <>
         <Window style={{width: clientWidth, height: clientHeight}}>
             <Desktop></Desktop>
-            <StatusBar></StatusBar>
             <AppBars></AppBars>
+            <AppUI></AppUI>
+            <StatusBar></StatusBar>
         </Window>
     </>;
 };
